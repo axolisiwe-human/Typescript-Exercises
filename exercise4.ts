@@ -2,12 +2,12 @@
 // the person's name.
 class Person{
     name:string 
-    age?:number
+    age:number
 
-    names = (nam:string, ag?:number) =>{
+    constructor (nam:string, ag:number){
         this.name = nam
         this.age = ag
-        return nam
-    }
 }
-console.log(names("Azola",5))
+let accessor = new Person('nsme',4)
+
+console.log(accessor.names)
