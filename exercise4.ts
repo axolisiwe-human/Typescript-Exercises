@@ -7,7 +7,20 @@ class Person{
     constructor (nam:string, ag:number){
         this.name = nam
         this.age = ag
+    }
 }
-let accessor = new Person('nsme',4)
+let accessor = new Person("Name",0)
 
-console.log(accessor.names)
+let func_name = (nam:string) => {
+    nam = "Human Bakishi"
+    accessor.name = nam
+    return accessor.name
+}
+let func_age = (ag:number) => {
+    ag = 24
+    accessor.age = ag
+    return accessor.age
+}
+
+console.log(func_name(""))
+console.log(func_age(0))
